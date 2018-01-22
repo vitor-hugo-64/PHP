@@ -1,0 +1,29 @@
+<?php  
+	
+	// CRIA UMA NOVA INSTANCIA DA CLASSE 'DateTime'
+	$dt = new DateTime();
+
+	// CHAMA A FUNÇÃO 'format'
+	echo $dt->format("d/m/Y H:i:s");
+
+
+
+	// ** SOMAR 15 DIAS NA DATA ** //
+
+	// CRIA UMA NOVA INSTANCIA DA CLASSE DateInterval QUE SERVE BASICAMENTE PARA PEGAR UM DETERMINADO INTERVALO EM DIAS, MESES, ANO E ETC DE ACORDO COM OS VALORES FORNECIDOS DENTRO DO PARENTESES.
+
+	// NESSE CASO COMO SE DESEJA PEGAR QUINZE DIAS DE INTERVALO É INFORMADO O SEGUINTE:
+	//					P - PADRÃO DO OBJETO
+	//					15 - QUANTIDADE
+	//					D - DIAS
+
+	$periodo = new DateInterval("P15D");
+
+	// PARA SOMAR QUINZE DIAS ENTÃO É USADO A CLASSE 'add()' PASSANDO O OBJETO QUE ARMAZENA O INTERVALO
+	$dt->add($periodo);
+	
+	echo "<br>";
+	
+	echo $dt->format("d/m/Y H:i:s");
+
+?>

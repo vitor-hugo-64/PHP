@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2</title>
+	<meta charset="utf-8">
+
+</head>
+<body>
+	<form method="POST" action="php.php">
+		<label for="itxt"> Texto </label>
+		<input type="text" name="texto" id="itxt"> <br/>
+		<label for="itam"> Tamanho </label>
+		<select name="tamanho" id="itam">
+			<option value="8pt"> 8 </option>
+			<option value="10pt"> 10 </option>
+			<option value="12pt"> 12 </option>
+			<option value="14pt" selected> 14 </option>
+			<option value="16pt"> 16 </option>
+		</select>
+		<label for="icor">Cor: </label>
+		<input type="color" name="cor" id="icor"/> <br/>
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>

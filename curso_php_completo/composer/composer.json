@@ -1,0 +1,15 @@
+{
+    "name": "vitor-hugo-64/composer",
+    "description": "Aula de PHP 7",
+    "type": "project",
+    "authors": [
+        {
+            "name": "vitor-hugo-64",
+            "email": "vitorhugooliveira64@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog": "1.0.*"
+    }
+}

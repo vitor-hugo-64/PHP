@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ler Dados</title>
+</head>
+<body>
+	<form action="php.php" method="post">
+		Digite O Seu Nome: <input type="text" name="nome"><br>
+
+		Digite O Seu Ano de Nascimento: <input type="number" name="ano">
+
+        <fieldset>
+        	<legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masc" value="Masculino" checked>
+            <label for="masc"> Masculino </label><br>
+        	<input type="radio" name="sexo" id="fem" value="Feminino">
+        	<label for="fem"> Feminino </label> 
+		</fieldset>
+
+        <input type="submit" name="cadastrar" value="Cadastrar">
+	</form>
+</body>
+</html>
