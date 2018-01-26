@@ -11,4 +11,3 @@
 	var_dump($ip);
 	var_dump($nome);
 	var_dump($endereco);
-?>
